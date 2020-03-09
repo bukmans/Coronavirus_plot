@@ -3,7 +3,6 @@ library(png)
 library(grid)
 library(gridExtra)
 library(tidyverse)
-library(plotly)
 
 
 coro <- read.csv("//pediatrics.ucsd.edu/userhome/user_dys/lorobinson/Desktop/coronavirus.csv", stringsAsFactors = F)
