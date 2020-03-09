@@ -18,7 +18,7 @@ p <- ggplot(coro,  aes(x=Date, y=Deaths, group = 1)) +
      annotate("text", x = coro$Date[19], y = max(coro$Deaths)/1.6, label = paste0("+",new_case),colour = "gray", size = 70, alpha = 0.4)+
       geom_line(size=1, color= "red") + 
       geom_point(size = 4,color = "red") +
-     labs(title= "Total Number of Deaths")+ 
+     labs(title= paste0("Total Number of Deaths: ",coro$Deaths[nrow(coro)]))+ 
   theme(#axis.text.x = element_text(angle = 45, vjust = 0.5),
         text = element_text(colour = "white"),
         title = element_text(color = "white"),
